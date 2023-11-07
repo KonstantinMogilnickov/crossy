@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Anonymous Pro, sans-serif;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(../fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(../fonts/AnonymousPro-Regular.ttf);
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 150px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.header{
+    min-height: 110px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.menu-link{
+    list-style-type: none;
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    padding: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-link-item:not(:last-child){
+    padding-right: 24px;
+}
+
+.content{
+    background-color: #f1f1f1;
+    min-height: 1000px;
+    padding-bottom: 25px;
+}
+
+.title{
+    color: #121723;
+    font-family: IBM Plex Mono;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    padding-top: 25px;
+}
+
+.card-link .sneaker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 364px;
+    height: 100%;
+    border-radius: 12px;
+    background: white;
+}
+
+.card-link .container__image {
+    width: 100%;
+}
+
+.container-text-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding: 32px 24px;
+}
+
+.container__title{
+    color: #121723;
+    font-family: Anonymous Pro;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container__text{
+    color:  #121723;
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 32px 0;
+}
+
+.footer{
+    min-height: 142px;
+    background-color:#000;
+    
+}
+
+.footer-menu-link{
+    text-decoration: none;
+    color:#fff;
+}
+
+.footer-menu-link-item:not(:last-child){
+    padding-right: 24px;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.line-footer{
+    background-color: #E6E8EC60;
+    margin-top: 32px;
+    margin-bottom: 18px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: #A1A6B4;
+    font-family: Anonymous Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+.card-link:active{
+    box-shadow:10px 10px 13px 0px rgba(0, 0, 0, 0.1);
+    border-radius:12px;
+}
+
+.card-link:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+    box-shadow:10px 10px 13px 0px rgba(0, 0, 0, 0.25);
+    border-radius:12px;
+    cursor: pointer;
+}
+
+/* Анимация возвращения карточки назад */
+.card-link:not(:hover){ 
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+}
+
+.container-card{
+    background-color:white;
+    
+    max-width: 1140px;
+    border-radius: 50px;
+    min-height: 1000px;
+    
+}
+
+.card-section{
+    padding: 32px 0;
+}
+
+.container-card .content-card-container{
+    padding: 48px;
+    display: flex;
+    gap: 32px;
+    flex-direction:column ;
+}
+
+.content-card-container .card-img{
+    width: 100%;
+    max-height: 600px;
+    
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.card-title{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.main-text{
+    width: 50%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.card-block-text{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.subtitle{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+
+.main-text-descr{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    width: 50%;
+}
+
+.main-text-descr .descr-title{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+hr .card-line{
+    color:#121723;
+    height: 1px;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .list-text{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width:768px){
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-card-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container{
+        padding: 0;
+        width: 95%;
+    }
+
+    .card-description{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-block-text{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .container-card .content-card-container{
+        display: flex;
+        padding: 24px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 24px;
+    }
+
+    .logo{
+        padding-bottom: 25px;
+    }
+
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center
+    }
+
+    
+
+    .footer-logo{
+        padding-bottom: 25px;
+    }
+
+    .content-card-container .card-img{
+        width: 100%;    
+    }
+
+    p{
+        width: 40vh;;
+    }
+    .main-text-descr{
+        width: 100%;
+    }
+
+    .logo{
+        padding-top: 24px;
+    }
+
+    .copyright{
+        padding-bottom: 24px;
+    }
+}
+
+@media screen  and (max-width:568px){
+    .container{
+        max-width: 95%;
+        padding: 0;
+    }
+    
+    .content-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu{
+        padding-bottom: 24px;
+    }
+
+    .logo{
+        padding-top: 24px;
+    }
+
+    .copyright{
+        padding-bottom: 24px;
+    }
+
+
+}
+
+@media screen  and (max-width:404px){
+    .container{
+        max-width: 95%;
+        padding: 0;
+    }
+    .main-text-descr{
+        width: 100%;
+    }
+
+    .container-card .content-card-container{
+        display: flex;
+        padding: 24px;
+    }
+}
